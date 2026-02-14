@@ -3,6 +3,9 @@ import pandas as pd
 import numpy as np
 
 st.title('Uber pickups in NYC')
+st.text('Hello! This is a simple Uber pickups in NYC app.')
+st.text('This app demonstrates how to use Streamlit to create a web app.')
+
 
 st.markdown('[Follow the tutorial here](https://docs.streamlit.io/get-started/tutorials/create-an-app)')
 
@@ -24,6 +27,8 @@ data_load_state = st.text('Loading data...')
 data = load_data(10000)
 # Notify the reader that the data was successfully loaded.
 data_load_state.text('Loading data...done!')
+
+
 
 if st.checkbox('Show raw data'):
     st.subheader('Raw data')

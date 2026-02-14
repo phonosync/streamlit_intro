@@ -1,0 +1,13 @@
+[project]
+name = "streamlit-intro"
+version = "0.1.0"
+description = "Streamlit demo app - Uber pickups in NYC"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.10",
+    "pandas>=2.2,<3",
+    "plotly>=6.0",
+    "streamlit>=1.42",
+    "geopandas>=1.1",
+    "numpy",
+]
