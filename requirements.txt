@@ -1,5 +1,0 @@
-matplotlib>=3.10
-pandas>=2.2,<3
-plotly>=5,<6
-streamlit>=1.42
-geopandas>=1.1
