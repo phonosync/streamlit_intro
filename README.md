@@ -33,10 +33,17 @@ The app will open at `http://localhost:8501`.
 
 ## Deploy on Streamlit Community Cloud
 
-1. Push this repo to GitHub.
+Streamlit Community Cloud uses `requirements.txt` to install dependencies. This file is already included in the repo and kept separate from `pyproject.toml` (which is used for local development with uv).
+
+You can programmatically create it from `pyproject.toml`:
+```bash
+uv pip compile pyproject.toml -o requirements.txt
+```
+
+1. Push this folder to GitHub.
 2. Go to [share.streamlit.io](https://share.streamlit.io) and sign in with GitHub.
 3. Click **Create app** and select your repository, branch (`main`), and set the main file path to `uber_pickups.py`.
 4. Select Python version 3.12 (Advanced Settings)
 5. Click **Deploy**.
 
-Streamlit Community Cloud uses `requirements.txt` to install dependencies. This file is already included in the repo and kept separate from `pyproject.toml` (which is used for local development with uv).
+
